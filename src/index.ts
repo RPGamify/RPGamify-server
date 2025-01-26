@@ -1,9 +1,10 @@
-import { Elysia} from "elysia";
+import { Elysia } from "elysia";
 import { swagger } from "@elysiajs/swagger";
 import { cors } from "@elysiajs/cors";
 import betterAuthView from "./utils/auth/auth-view";
 
-//auth using betterAuth with ELysia, read upapp.listen(process.env.PORT || 8000);
+//auth using betterAuth with ELysia, read up
+//app.listen(process.env.PORT || 8000);
 const app = new Elysia()
   .use(swagger())
   .use(cors())

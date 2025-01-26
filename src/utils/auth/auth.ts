@@ -21,6 +21,7 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true, // If you want to use email and password auth
   },
+  trustedOrigins: ["http://localhost:5173"],
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
